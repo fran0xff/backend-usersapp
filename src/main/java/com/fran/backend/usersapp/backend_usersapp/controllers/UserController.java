@@ -12,7 +12,6 @@ import com.fran.backend.usersapp.backend_usersapp.models.entities.User;
 import com.fran.backend.usersapp.backend_usersapp.services.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
