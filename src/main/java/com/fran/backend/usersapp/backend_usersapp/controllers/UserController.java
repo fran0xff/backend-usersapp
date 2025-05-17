@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fran.backend.usersapp.backend_usersapp.models.entities.User;
 import com.fran.backend.usersapp.backend_usersapp.services.UserService;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,7 +24,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 
 @RestController
-@RequestMapping("/users")   
+@RequestMapping("/users") 
+@CrossOrigin(originPatterns  = "*")  
 public class UserController {
 
     @Autowired
